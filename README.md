@@ -18,7 +18,7 @@
                         uri: https://github.com/ab-gobi/cloud-config.git
                         clone-on-start: true
                         
-        # Configuration in cloud config server component  (bootstrap.yml)
+        # Configuration in cloud config client component  (bootstrap.yml)
               spring:
                   cloud:
                     config:
