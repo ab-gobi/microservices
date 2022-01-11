@@ -27,30 +27,30 @@
                       uri: http://localhost:9000
                       
   # service-registry - http://localhost:8761/
-  Every services to be registered with service registry server with spring application name. Its a common configuration so this conf will be maintained in cloud config             server
-  eureka:
-    client:
-      register-with-eureka: true
-      fetch-registry: true
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-    instance:
-      hostname: localhost
+     Every services to be registered with service registry server with spring application name. Its a common configuration so this conf will be maintained in cloud config             server
+     eureka:
+       client:
+         register-with-eureka: true
+         fetch-registry: true
+       service-url:
+         defaultZone: http://localhost:8761/eureka/
+       instance:
+         hostname: localhost
       
  # api-gateway server - http://localhost:9191
-  Every api calls should go to this api gateway server and it takes care of redirecting to the microservices according to the uri which is configured in the properties as below
-  spring:
-    cloud:
-      gateway:
-        routes:
-        - id: USER-SERVICE
-          uri: lb://USER-SERVICE
-          predicates:
-            - Path=/users/**
-        - id: DEPARTMENT-SERVICE
-          uri: lb://DEPARTMENT-SERVICE
-          predicates:
-            - Path=/departments/**
+     Every api calls should go to this api gateway server and it takes care of redirecting to the microservices according to the uri which is configured in the properties as below
+     spring:
+       cloud:
+         gateway:
+           routes:
+           - id: USER-SERVICE
+             uri: lb://USER-SERVICE
+             predicates:
+               - Path=/users/**
+           - id: DEPARTMENT-SERVICE
+             uri: lb://DEPARTMENT-SERVICE
+             predicates:
+               - Path=/departments/**
 
 # department-service - http://localhost:9001
 # user-service - http://localhost:9002
