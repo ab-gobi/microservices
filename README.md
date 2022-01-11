@@ -1,11 +1,11 @@
 # microservices
 # port details
-   department service: 9001
-   user service: 9002
-   eureka service-registry: 8761
-   api-gateway: 9191
-   cloud-config-server: 9000
-   zipkin: 9411
+      department service: 9001
+      user service: 9002
+      eureka service-registry: 8761
+      api-gateway: 9191
+      cloud-config-server: 9000
+      zipkin: 9411
   
  # cloud-config-server - https://github.com/ab-gobi/cloud-config.git
     Generic configurations that is common to all microservices should be maintained here and it avoids the common configuration modification for 
@@ -55,5 +55,5 @@
 # department-service - http://localhost:9001
 # user-service - http://localhost:9002
 # zipkin-server for distributed log tracing - 127.0.0.1:9411**
-  spring.zipkin.base-url=http://127.0.0.1:9411/ - to be configured in the client application properties
-________________________________________________________________________________________________________________________________________________________________________________ 
+   spring.zipkin.base-url=http://127.0.0.1:9411/ - to be configured in the client application properties
+
