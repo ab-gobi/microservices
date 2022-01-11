@@ -8,7 +8,8 @@
    zipkin: 9411
   
  # cloud-config-server - https://github.com/ab-gobi/cloud-config.git
-    Generic configurations that is common to all microservices should be maintained here and it avoids the common configuration modification for every microservices individually
+    Generic configurations that is common to all microservices should be maintained here and it avoids the common configuration modification for 
+    every microservices individually
         # Configuration in cloud config server component  (application.properties or application.yml)   
              spring:
               cloud:
