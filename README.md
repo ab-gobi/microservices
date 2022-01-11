@@ -54,6 +54,6 @@
 
 # department-service - http://localhost:9001
 # user-service - http://localhost:9002
-# zipkin-server for distributed log tracing - 127.0.0.1:9411**
+# zipkin-server for distributed log tracing - 127.0.0.1:9411
    spring.zipkin.base-url=http://127.0.0.1:9411/ - to be configured in the client application properties
 
